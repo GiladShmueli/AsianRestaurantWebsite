@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>HG Sushi Bar</title>
+	<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/products.css">
+	
+  </head>
+  <body>
+        <div id="header-div">
+          <ul class="nav">
+              <li width="70%"/>  
+            <li width="30%">
+              <a id="details" class="nav-link grad nav-top" style="position: fixed">לפרטי הזמנה</a>
+            </li>
+          </ul>
+        </div>
+        <div id="back">
+          <h4 class="menu-header">מנות</h4>
+          <div id="dishes" class="d-inline-flex flex-wrap justify-content-center">
+          </div>
+          <h4 class="menu-header">שתיה</h4>
+          <div id="drinks" class="d-inline-flex flex-wrap justify-content-center">
+          </div>
+        </div>
+        <div id="fill-page" style="display: none;">
+          <!--show dish-->
+            <div id="dish-extended" class="container" style="display: table;">
+          
+              <div class="row" style="align-items: center; height: 100%;">
+                
+                <img id="dish-image" class="col-lg-2 col-sm-2"></img>
+                <div id="dish-details" class="col-lg-4 col-sm-6">
+                      <h4 id="dish-name" class="dish-text"></h4>
+                      <p id="dish-price" class="dish-text"></p>
+                      <form id="dish-form">
+                        <div class="row" style="width: auto;" id="radios">
+                        
+                        </div>
+                      </form>
+                </div>
+                <div id="dish-buttons" class="col-lg-3 col-sm-12">
+                  <a id="add-dish" class="a-button grad">הוספה להזמנה</a>
+                  <a id="cancel-dish" class="a-button grad">ביטול</a>
+                </div>
+              </div>
+            </div>
+          <!--show order-->
+          <div id="order-div">
+            <h4>פרטי הזמנה</h4>
+            <div id="order-details"></div>
+            <div class="order-buttons">
+              <a id="accept-order" class="a-button grad order-button">לביצוע הזמנה</a>
+              <a id="cancel-order" class="a-button grad order-button">ביטול</a>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+                <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+                <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+        <script src="/js/database.js"></script>
+        <script src="/js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>HG Sushi Bar</title>
+	<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homepage.css">
+	
+  </head>
+  <body>
+  <div id="header-div">
+    <ul class="nav">
+        <li width="70%"/>
+			<li width="10%">
+				<a id="order" class="nav-link grad">להזמנה</a>
+			</li>
+            
+			<li width="10%">
+				<a id="details" class="nav-link grad">לפרטי הזמנה</a>
+			</li>
+			<li width="10%">
+				<a id="manager" class="nav-link grad">התחברות כמנהל</a>
+			</li>
+		</ul>
+  </div>
+  <div id="main-div" class="rel container">
+    <img id="bg" src="/assets/sushiBGcropped.png" alt="sushi-background"
+     class="img-fluid position-absolute">
+      <img id="logo" src="/assets/HGSushiLogo.png" alt="HG Sushi Bar's Logo"
+      class="img-fluid position-absolute"/>
+    </img>
+    
+  </div>
+  <div class="container position-relative d-block">
+    <div id="menu" class="row justify-content-center">
+          <div id="dishes" class="menu-column col-m">
+          <h4>מנות</h4>
+          </div>
+          <div id="drinks" class="menu-column col-m">
+          <h4>שתיה</h4>
+          </div>
+      </div>
+  </div>
+<div id="popup-div">
+<center>
+  <div id="popup-container"> <!--container-->
+    <a id="close-popup" class="grad">x</a>
+      <form id="manager-form" style="display: inline-grid">
+        <input id="manager-email" type="text" placeholder="אימייל">
+        <input id="manager-pw" type="password" placeholder="סיסמה">
+      </form>
+      <form id="order-form" style="display: inline-grid">
+        <input id="phone-order" type="text" placeholder="טלפון">
+      </form>
+      <a id="submit" class="grad">אישור</a>
+    </div>
+  </center>
+</div>
+<!--  <audio id="myaudio"
+  controls autoplay loop style="display: inline">
+  <source src="/assets/bgm.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.6;
+</script>-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+<script src="/js/database.js"></script>
+<script src="/js/homepage.js"></script>
+  </body>
+
+</html>

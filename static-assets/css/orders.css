@@ -1,0 +1,27 @@
+.order-div {
+    width: fit-content;
+    min-width: 100%;
+    border-color:	#daa520;
+    box-shadow: 0 0 20px #ffd700;
+    height: fit-content;
+    background: black;
+    color:whitesmoke;
+    text-align: right;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: fit-content;
+}
+
+.client-div {
+    border-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    width: fit-content;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+}

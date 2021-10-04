@@ -1,0 +1,41 @@
+#bg {
+    width: 60%;
+    min-width:300px;
+    border-color:	#daa520;
+    border-radius: 50px;
+    box-shadow: 0 0 20px #ffd700;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    height: fit-content;
+    background: black;
+    background-image: url(/assets/sushiBGcropped.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#username {
+    margin-top: 230px;
+}
+
+.error-text {
+	color: red;
+	display: none;
+	margin: 0;
+	font-size: 12px;
+	margin-bottom: 5px;
+    direction: rtl;
+    text-align: right;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.order-button {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}

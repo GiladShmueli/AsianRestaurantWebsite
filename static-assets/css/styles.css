@@ -1,0 +1,114 @@
+/*--dark-sienna: #400d13 ff;
+ --ruby-red: #a61223 ff;
+ --ruby-red-2: #990e1e ff;
+ --red-salsa: #fc354c ff;
+ --rosewood: #5c040e ff;
+
+ --dark-sienna: rgba(63, 13, 19, 1);
+ --ruby-red: rgba(165, 18, 35, 1);
+ --ruby-red-2: rgba(154, 14, 31, 1);
+ --red-salsa: rgba(252, 54, 77, 1);
+ --rosewood: rgba(93, 4, 14, 1);*/
+
+#logo
+{
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20%;
+}
+
+body {
+    background-image: url("/../assets/fancy-cushion.png");
+    background-color: black;
+    background-position: center top;
+    background-repeat: repeat;
+}
+
+a {
+    background-color: #a61223;
+    cursor:pointer;
+}
+
+.container {
+    width: 100%;
+}
+
+.grad{
+    background-image: linear-gradient(#A61223, #FF1223);
+    border-color: #701020;
+    border-width: 2px;
+    font-weight: 600;
+}
+
+#header-div{
+    border-radius: 15px;
+    z-index: 5;
+}
+
+.header-top {
+    width: fit-content;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+.header-right {
+    top: 0;
+    right: -9%;
+    position: fixed;
+    width: min-content;
+}
+
+.abs {
+    position: absolute;
+    /* float: center; */
+}
+
+.rel {
+    position: relative;
+    align-items: center;
+}
+
+.fix {
+    position: fixed;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #daa520;
+    color: whitesmoke;
+}
+
+.nav-top {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 160px;
+    direction: rtl;
+    text-align: center;
+}
+
+.nav-side {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 160px;
+    direction: rtl;
+    text-align: center;
+}
+
+.radio-button {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 3px;
+}
+
+.radio-text {
+    color: whitesmoke;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.5%;
+}

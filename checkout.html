@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>HG Sushi Bar</title>
+	<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+	
+  </head>
+  <body>
+    <div id="bg" class="row" height="100%">
+		<div class="col-lg-3 col-sm-1"></div> <!--left margin-->
+		<div class="col-lg-6 col-sm-10" id="form_div">
+			<form>
+				
+					<input type="text" class="form-control" id="username"
+						placeholder="שם">
+					<p class="error-text" id="name-error">אנא הכנס שם</p>
+					<input type="text" class="form-control" id="phone"
+						placeholder="מס' טלפון">
+					<p class="error-text" id="phone-error">אנא הכנס מס' טלפון</p>	
+					<input type="text" class="form-control" id="address"
+						placeholder="כתובת">
+					<p class="error-text" id="address-error">אנא הכנס כתובת</p>
+                    <!--<center>
+                        <div class="row" style="width: fit-content;">
+                            <input type="radio" name="home_or_take" value="delivery" checked="" class="col-1"><p class="col-5 radio-text">למשלוח הביתה</p>
+                            <input type="radio" name="home_or_take" value="takeaway" class="col-1"> <p class="col-5 radio-text">לאיסוף מהסניף</p>
+                        </div>
+                    </center>-->
+                    <center style="margin-right: 14%; margin-bottom: 10px;">
+                        <div id="radios-row" class="row" style="width: initial;">
+                            <input type="radio" name="home_or_take" value="delivery" checked="" class="radio-button" id="home"><p class="radio-text" style="margin-left:1em;">למשלוח הביתה</p>
+                            <input type="radio" name="home_or_take" value="takeaway" class="radio-button"> <p class="radio-text">לאיסוף מהסניף</p>
+                        </div>
+                   </center>
+					<center>
+						  <a id="accept-btn" type="button" class="order-button grad ">לאישור הזמנה</a>
+              <a id="decline-btn" type="button" class="order-button grad ">לביטול הזמנה</a>
+					</center>
+			</form>
+	</div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+<script src="/js/database.js"></script>
+<script src="/js/checkout.js"></script>
+  </body>
+
+</html>
