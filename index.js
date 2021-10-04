@@ -26,6 +26,4 @@ app.get('/view-orders/', (req, res) => {
     res.sendFile(path.resolve("orders.html"));
 })
 
-app.listen(port, function() {
-    console.log(`server is running on port 3200`);
-})
+app.listen(process.env.PORT || port);
